@@ -1,1 +1,2 @@
-/db/development.sqlite
+gemfile.lock
+development.sqlite
