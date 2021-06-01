@@ -1,0 +1,20 @@
+<form action="/books/<%= @book.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+
+  <label>Title:</label>
+  <input type="text" id="name" name="book[name]" value="<%= @book.name%>">
+
+  <label>Author:</label>
+  <input type="text" id="author" name="book[author]" value="<%= @book.author%>" >
+
+  <label>Genre:</label>
+  <input type="text" id="genre" name="book[genre]" value="<%= @book.genre%>">
+  
+  <label>Publication Date:</label>
+  <input type="text" id="publication_date" name="book[publication_date]" value="<%= @book.publication_date%>">
+
+  <label>Personal Notes:</label>
+  <input type="text" id="personal_notes" name="book[personal_notes]" value="<%= @book.personal_notes%>">
+
+  <input type="submit" name="submit" id="submit" >
+</form>

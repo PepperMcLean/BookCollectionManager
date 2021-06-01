@@ -1,0 +1,13 @@
+<h1>Books:</h1>
+<% @books.each do |book| %>
+    <li><a href="/books/<%= book.id%>"><%= book.name%></a></li>
+<% end %>
+<h2></h2>
+<form method="get" action="/home">
+<input type="hidden" name="_method" />
+<input type="submit" value="Home" style="float: left;"/>
+</form>
+<form method="get" action="/logout">
+<input type="hidden" name="_method" />
+<input type="submit" value="Log Out" style="float: left;"/>
+</form>

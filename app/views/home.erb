@@ -1,0 +1,14 @@
+<h1>Welcome to the your Books, <%= current_user.username%>.</h1>
+<h2>What would you like to do?</h2>
+<form method="get" action="/books/show">
+<input type="hidden" name="_method" />
+<input type="submit" value="Show Books" style="float: left;"/>
+</form>
+<form method="get" action="/books/new">
+<input type="hidden" name="_method" />
+<input type="submit" value="Create Books" style="float: left;"/>
+</form>
+<form method="get" action="/logout">
+<input type="hidden" name="_method" />
+<input type="submit" value="Log Out" />
+</form>
